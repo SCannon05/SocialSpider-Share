@@ -1,0 +1,22 @@
+// Spring Roo 1.2.1.RELEASE [rev 6eae723] log opened at 2012-03-25 19:47:56
+project --topLevelPackage com.unlv.socialspider.shawncannon --projectName SocialSpiderShare --java 6 --packaging JAR
+// Spring Roo 1.2.1.RELEASE [rev 6eae723] log closed at 2012-03-25 19:47:57
+// Spring Roo 1.2.1.RELEASE [rev 6eae723] log opened at 2012-03-25 19:48:38
+hint
+jpa setup --database DATABASE_DOT_COM --provider HIBERNATE 
+jpa setup --provider HIBERNATE --database HYPERSONIC_IN_MEMORY 
+hint
+entity jpa --class com.unlv.socialspider.shawncannon.share.twitter.connect.TwitterConnectionFactory
+hint
+entity jpa --class ~twitter.connect.TwitterConnectionFactory
+entity jpa --class ~facebook.connect.PostToWallAfterConnectInterceptor
+entity jpa --class ~config.SocialConfig
+entity jpa --class ~signin.SimpleSigninAdaptor
+help
+version
+web mvc setup
+web mvc all --package ~.web
+entity jpa --class ~.twitter.connect.SimpleSigninAdaptor
+entity jpa --class ~.twitter.connect.TwitterTimelineController
+entity jpa --class ~.facebook.connect.FacebookFeedController
+entity jpa --class ~.domain.ShareController
