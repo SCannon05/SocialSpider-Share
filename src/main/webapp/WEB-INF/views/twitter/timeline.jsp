@@ -19,20 +19,6 @@
 	<input type="submit" value="Post Tweet"/>
 </form>
 
-<c:url var="searchUrl" value="/twitter/search" />
-<form action="${searchUrl}" method="get">
-	<p><input type="text" name="query" value="<c:out value="${param.query}"/>" /> <input type="submit" value="Search"/></p>
-</form>
-
-<c:url var="timelineBaseUrl" value="/twitter/timeline" />
-<ul class="choices">
-<li><a href="<c:out value="${timelineBaseUrl}"/>/Home">Home Timeline</a></li>
-<li><a href="<c:out value="${timelineBaseUrl}"/>/User">User Timeline</a></li>
-<li><a href="<c:out value="${timelineBaseUrl}"/>/Public">Public Timeline</a></li>
-<li><a href="<c:out value="${timelineBaseUrl}"/>/Mentions">Mentions</a></li>
-<li><a href="<c:out value="${timelineBaseUrl}"/>/Favorites">Favorites</a></li>
-</ul>
-
 <div class="feed">
 <ul class="imagedList">
 <c:forEach items="${timeline}" var="tweet">
