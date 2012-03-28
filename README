@@ -3,4 +3,4 @@ TODO:
 - Currently uses Spring-Social-Showcase OAuth tokens due to problems registering app in Twitter and Facebook.
   Find a way to fix that.
 - Currently uses Spring-Social-Showcase package names because for some reason I can't get it to work any other way.
-  Find a way to make the code more original.
+  Find a way to make the code more original. Right now it's function over form.
