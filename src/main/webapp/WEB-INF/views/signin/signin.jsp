@@ -28,6 +28,7 @@
 	</fieldset>
 	<button type="submit">Sign In</button>
 	
+	
 	<p>Or you can <a href="<c:url value="/signup"/>">signup</a> with a new account.</p>
 </form>
 
@@ -41,3 +42,5 @@
         <input type="hidden" name="scope" value="publish_stream,user_photos,offline_access" />
 		<button type="submit"><img src="<c:url value="/resources/social/facebook/sign-in-with-facebook.png"/>" /></button>
 	</form>
+
+	

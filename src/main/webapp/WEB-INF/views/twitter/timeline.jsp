@@ -19,19 +19,3 @@
 	<input type="submit" value="Post Tweet"/>
 </form>
 
-<div class="feed">
-<ul class="imagedList">
-<c:forEach items="${timeline}" var="tweet">
-	<li class="imagedItem">
-		<div class="image">
-			<c:if test="${not empty tweet.profileImageUrl}"><img src="<c:out value="${tweet.profileImageUrl}"/>" align="left"/></c:if>
-		</div>
-		<div class="content">
-		<strong><a href="http://twitter.com/<c:out value="${tweet.fromUser}" />"><c:out value="${tweet.fromUser}" /></a></strong><br/>
-		<c:out value="${tweet.text}" /><br/>
-		<span class="postTime"><c:out value="${tweet.createdAt}"/></span>
-		</div>
-	</li>
-</c:forEach>
-</ul>
-</div>
